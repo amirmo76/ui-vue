@@ -23,7 +23,7 @@
                     "source": "app/components/button/Button.vue",
                     "target": "components/button/Button.vue"
                 }
-            ]
+            ],
             "dependencies": ["vue", "class-variance-authority"],
             "internal_dependencies": ["cn"]
         }
