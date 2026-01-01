@@ -25,8 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { VariantProps } from "class-variance-authority"
-import { cva } from "class-variance-authority"
+import { type VariantProps, cva } from "class-variance-authority"
 import type { HTMLAttributes } from "vue"
 
 const buttonVariants = cva(
