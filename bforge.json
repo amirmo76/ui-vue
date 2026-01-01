@@ -1,6 +1,6 @@
 {
     "name": "ui-vue",
-    "schema_version": "1.0.0"
+    "schema_version": "1.0.0",
     "items": {
         "cn": {
             "type": "utility",
