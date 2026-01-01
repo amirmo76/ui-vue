@@ -1,0 +1,31 @@
+{
+    "name": "ui-vue",
+    "schema_version": "1.0.0"
+    "items": {
+        "cn": {
+            "type": "utility",
+            "description": "Base utility for class merging (cn). Required by almost everything.",
+            "files": [
+                {
+                    "source": "app/utils/cn.ts",
+                    "target": "utils/cn.ts"
+                }
+            ],
+            "dependencies": ["clsx", "tailwind-merge"],
+            "internal_dependencies": []
+        },
+
+        "button": {
+            "type": "component",
+            "description": "Standard button component with variants.",
+            "files": [
+                {
+                    "source": "app/components/button/Button.vue",
+                    "target": "components/button/Button.vue"
+                }
+            ]
+            "dependencies": ["vue", "class-variance-authority"],
+            "internal_dependencies": ["cn"]
+        }
+    }
+}
