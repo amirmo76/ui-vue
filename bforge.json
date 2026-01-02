@@ -26,6 +26,36 @@
             ],
             "dependencies": ["vue", "class-variance-authority"],
             "internal_dependencies": ["cn"]
+        },
+
+        "toast": {
+            "type": "component",
+            "description": "A toast component!",
+            "files": [
+                {
+                    "source": "app/components/toast/Toast.vue",
+                    "target": "components/toast/Toast.vue"
+                },
+                {
+                    "source": "app/components/toast/ToastContainer.vue",
+                    "target": "components/toast/ToastContainer.vue"
+                },
+                {
+                    "source": "app/components/toast/ToastIcon.vue",
+                    "target": "components/toast/ToastIcon.vue"
+                },
+                {
+                    "source": "shared/types/toast.ts",
+                    "target": "types/toast.ts"
+                },
+                {
+                    "source": "app/composables/useToast.ts",
+                    "target": "composables/toast.ts"
+                }
+            ],
+
+            "dependencies": ["vue", "uuid"],
+            "internal_dependencies": []
         }
     }
 }
