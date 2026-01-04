@@ -17,7 +17,9 @@
                     <SelectGroup>
                         <SelectItem value="new-york">New York</SelectItem>
                         <SelectItem value="los-angeles">Los Angeles</SelectItem>
-                        <SelectItem value="chicago">Chicago</SelectItem>
+                        <SelectItem value="chicago" disabled
+                            >Chicago</SelectItem
+                        >
                         <SelectItem value="houston">Houston</SelectItem>
                     </SelectGroup>
                     <SelectGroup>
