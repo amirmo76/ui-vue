@@ -28,6 +28,60 @@
             "internal_dependencies": ["cn"]
         },
 
+        "textarea": {
+            "type": "component",
+            "description": "Standard textarea component.",
+            "files": [
+                {
+                    "source": "app/components/textarea/Textarea.vue",
+                    "target": "components/textarea/Textarea.vue"
+                }
+            ],
+            "dependencies": ["vue"],
+            "internal_dependencies": ["cn"]
+        },
+
+        "select": {
+            "type": "component",
+            "description": "Standard select component.",
+            "files": [
+                {
+                    "source": "app/components/select/Select.vue",
+                    "target": "components/select/Select.vue"
+                },
+                {
+                    "source": "app/components/select/SelectContent.vue",
+                    "target": "components/select/SelectContent.vue"
+                },
+                {
+                    "source": "app/components/select/SelectGroup.vue",
+                    "target": "components/select/SelectGroup.vue"
+                },
+                {
+                    "source": "app/components/select/SelectItem.vue",
+                    "target": "components/select/SelectItem.vue"
+                },
+                {
+                    "source": "app/components/select/SelectLabel.vue",
+                    "target": "components/select/SelectLabel.vue"
+                },
+                {
+                    "source": "app/components/select/SelectSeparator.vue",
+                    "target": "components/select/SelectSeparator.vue"
+                },
+                {
+                    "source": "app/components/select/SelectTrigger.vue",
+                    "target": "components/select/SelectTrigger.vue"
+                },
+                {
+                    "source": "app/components/select/SelectValue.vue",
+                    "target": "components/select/SelectValue.vue"
+                }
+            ],
+            "dependencies": ["vue", "reka-ui"],
+            "internal_dependencies": ["cn"]
+        },
+
         "toast": {
             "type": "component",
             "description": "A toast component!",
