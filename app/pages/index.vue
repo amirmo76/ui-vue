@@ -15,6 +15,7 @@
                 /></SelectTrigger>
                 <SelectContent>
                     <SelectGroup>
+                        <SelectLabel>Popular Cities</SelectLabel>
                         <SelectItem value="new-york">New York</SelectItem>
                         <SelectItem value="los-angeles">Los Angeles</SelectItem>
                         <SelectItem value="chicago" disabled
@@ -22,7 +23,9 @@
                         >
                         <SelectItem value="houston">Houston</SelectItem>
                     </SelectGroup>
+                    <SelectSeparator />
                     <SelectGroup>
+                        <SelectLabel>All Cities</SelectLabel>
                         <SelectItem value="phoenix">Phoenix</SelectItem>
                         <SelectItem value="philadelphia"
                             >Philadelphia</SelectItem
@@ -31,8 +34,6 @@
                         <SelectItem value="san-diego">San Diego</SelectItem>
                         <SelectItem value="dallas">Dallas</SelectItem>
                         <SelectItem value="san-jose">San Jose</SelectItem>
-                    </SelectGroup>
-                    <SelectGroup>
                         <SelectItem value="austin">Austin</SelectItem>
                         <SelectItem value="jacksonville"
                             >Jacksonville</SelectItem
@@ -65,6 +66,16 @@
 </template>
 
 <script lang="ts" setup>
+import Button from "~/components/button/Button.vue"
+import Select from "~/components/select/Select.vue"
+import SelectContent from "~/components/select/SelectContent.vue"
+import SelectGroup from "~/components/select/SelectGroup.vue"
+import SelectItem from "~/components/select/SelectItem.vue"
+import SelectLabel from "~/components/select/SelectLabel.vue"
+import SelectSeparator from "~/components/select/SelectSeparator.vue"
+import SelectTrigger from "~/components/select/SelectTrigger.vue"
+import SelectValue from "~/components/select/SelectValue.vue"
+
 const store = inject(TOAST_STORE_KEY)
 const selectedTown = ref<string | null>(null)
 

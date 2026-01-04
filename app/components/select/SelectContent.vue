@@ -17,7 +17,7 @@
 
 <template>
     <SelectPortal>
-        <SelectContent
+        <SelectContentPrimitive
             data-slot="select-content"
             v-bind="forwarded"
             :class="
@@ -51,8 +51,11 @@
 
             <SelectViewport
                 :class="
-                    props.position === 'popper' &&
-                    'h-(--reka-select-trigger-height) w-full min-w-(--reka-select-trigger-width) scroll-my-1'
+                    cn(
+                        'p-1',
+                        props.position === 'popper' &&
+                            'h-(--reka-select-trigger-height) w-full min-w-(--reka-select-trigger-width) scroll-my-1'
+                    )
                 "
             >
                 <slot />
@@ -78,14 +81,14 @@
                     <path d="M6 9l6 6l6 -6" />
                 </svg>
             </SelectScrollDownButton>
-        </SelectContent>
+        </SelectContentPrimitive>
     </SelectPortal>
 </template>
 
 <script lang="ts" setup>
 import {
     SelectPortal,
-    SelectContent,
+    SelectContent as SelectContentPrimitive,
     SelectScrollUpButton,
     SelectScrollDownButton,
     SelectViewport,

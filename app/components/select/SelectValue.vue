@@ -11,11 +11,15 @@
 -->
 
 <template>
-    <SelectValue data-slot="select-value" v-bind="forwarded" />
+    <SelectValuePrimitive data-slot="select-value" v-bind="forwarded" />
 </template>
 
 <script lang="ts" setup>
-import { SelectValue, useForwardProps, type SelectValueProps } from "reka-ui"
+import {
+    SelectValue as SelectValuePrimitive,
+    useForwardProps,
+    type SelectValueProps,
+} from "reka-ui"
 
 const props = defineProps<SelectValueProps>()
 

@@ -9,7 +9,7 @@
 -->
 
 <template>
-    <SelectItem
+    <SelectItemPrimitive
         data-slot="select-item"
         :class="cn(baseClass, props.class)"
         v-bind="forwarded"
@@ -42,12 +42,12 @@
         >
             <slot />
         </SelectItemText>
-    </SelectItem>
+    </SelectItemPrimitive>
 </template>
 
 <script lang="ts" setup>
 import {
-    SelectItem,
+    SelectItem as SelectItemPrimitive,
     type SelectItemProps,
     SelectItemIndicator,
     SelectItemText,

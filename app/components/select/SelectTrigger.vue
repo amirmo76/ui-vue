@@ -11,7 +11,7 @@
 -->
 
 <template>
-    <SelectTrigger
+    <SelectTriggerPrimitive
         data-slot="select-trigger"
         :data-size="props.size"
         :class="cn(baseClass, props.class)"
@@ -35,12 +35,12 @@
                 <path d="M6 9l6 6l6 -6" />
             </svg>
         </SelectIcon>
-    </SelectTrigger>
+    </SelectTriggerPrimitive>
 </template>
 
 <script lang="ts" setup>
 import {
-    SelectTrigger,
+    SelectTrigger as SelectTriggerPrimitive,
     type SelectTriggerProps,
     SelectIcon,
     useForwardProps,
