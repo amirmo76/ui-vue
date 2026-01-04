@@ -1,3 +1,22 @@
+<!--
+    A visual separator between groups of items in the Select content.
+
+    Example usage:
+
+    ...
+    <SelectGroup>
+        <SelectLabel>Fruits</SelectLabel>
+        <SelectItem value="apple">Apple</SelectItem>
+    </SelectGroup>
+
+    <SelectSeparator />
+
+    <SelectGroup>
+        <SelectLabel>Vegetables</SelectLabel>
+        <SelectItem value="carrot">Carrot</SelectItem>
+    </SelectGroup>
+    ...
+-->
 <template>
     <SelectSeparatorPrimitive
         data-slot="select-seperator"
