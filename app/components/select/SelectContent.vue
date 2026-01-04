@@ -23,7 +23,7 @@
             :class="
                 cn(
                     baseClass,
-                    props.position === 'popper' ? popperClass : '',
+                    props.position === 'popper' && popperClass,
                     props.class
                 )
             "
@@ -51,10 +51,8 @@
 
             <SelectViewport
                 :class="
-                    cn(
-                        'p-1',
-                        props.position === 'popper' ? viewportPopperClass : ''
-                    )
+                    props.position === 'popper' &&
+                    'h-(--reka-select-trigger-height) w-full min-w-(--reka-select-trigger-width) scroll-my-1'
                 "
             >
                 <slot />
@@ -118,11 +116,8 @@ const delegatedProps = computed(() => {
 const forwarded = useForwardPropsEmits(delegatedProps, emits)
 
 const baseClass =
-    "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 relative z-50 max-h-(--radix-select-content-available-height) min-w-[8rem] origin-(--radix-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border border-border shadow-md"
+    "bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 relative z-50 max-h-(--reka-select-content-available-height) min-w-[8rem] origin-(--reka-select-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border border-border shadow-md"
 
 const popperClass =
     "data-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1"
-
-const viewportPopperClass =
-    "h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)] scroll-my-1"
 </script>
