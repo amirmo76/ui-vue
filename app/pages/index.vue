@@ -61,6 +61,7 @@
                     </SelectGroup>
                 </SelectContent>
             </Select>
+            <Textarea placeholder="text" rows="10" v-model="textareaMessage" />
         </div>
     </div>
 </template>
@@ -75,9 +76,11 @@ import SelectLabel from "~/components/select/SelectLabel.vue"
 import SelectSeparator from "~/components/select/SelectSeparator.vue"
 import SelectTrigger from "~/components/select/SelectTrigger.vue"
 import SelectValue from "~/components/select/SelectValue.vue"
+import Textarea from "~/components/textarea/Textarea.vue"
 
 const store = inject(TOAST_STORE_KEY)
 const selectedTown = ref<string | null>(null)
+const textareaMessage = ref<string>("")
 
 const toast = () =>
     store?.add(
