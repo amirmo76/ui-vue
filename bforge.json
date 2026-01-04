@@ -82,6 +82,23 @@
             "internal_dependencies": ["cn"]
         },
 
+        "radio_group": {
+            "type": "component",
+            "description": "Standard radio group component.",
+            "files": [
+                {
+                    "source": "app/components/radio-group/RadioGroup.vue",
+                    "target": "components/radio-group/RadioGroup.vue"
+                },
+                {
+                    "source": "app/components/radio-group/RadioGroupItem.vue",
+                    "target": "components/radio-group/RadioGroupItem.vue"
+                }
+            ],
+            "dependencies": ["vue", "reka-ui"],
+            "internal_dependencies": ["cn"]
+        },
+
         "toast": {
             "type": "component",
             "description": "A toast component!",
