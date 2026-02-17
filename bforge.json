@@ -4,6 +4,7 @@
     "items": {
         "cn": {
             "type": "utility",
+            "version": "1.0.0",
             "description": "Base utility for class merging (cn). Required by almost everything.",
             "files": [
                 {
@@ -18,6 +19,7 @@
 
         "button": {
             "type": "component",
+            "version": "1.0.0",
             "description": "Standard button component with variants.",
             "files": [
                 {
@@ -32,6 +34,7 @@
 
         "textarea": {
             "type": "component",
+            "version": "1.0.0",
             "description": "Standard textarea component.",
             "files": [
                 {
@@ -46,6 +49,7 @@
 
         "select": {
             "type": "component",
+            "version": "1.0.0",
             "description": "Standard select component.",
             "files": [
                 {
@@ -95,6 +99,7 @@
 
         "radio_group": {
             "type": "component",
+            "version": "1.0.0",
             "description": "Standard radio group component.",
             "files": [
                 {
@@ -114,6 +119,7 @@
 
         "toast": {
             "type": "component",
+            "version": "1.0.0",
             "description": "A toast component!",
             "files": [
                 {
