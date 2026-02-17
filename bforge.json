@@ -1,12 +1,13 @@
 {
     "name": "ui-vue",
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "items": {
         "cn": {
             "type": "utility",
             "description": "Base utility for class merging (cn). Required by almost everything.",
             "files": [
                 {
+                    "id": "fyg5tyzew",
                     "source": "app/utils/cn.ts",
                     "target": "utils/cn.ts"
                 }
@@ -20,6 +21,7 @@
             "description": "Standard button component with variants.",
             "files": [
                 {
+                    "id": "Ugg2tYz2w",
                     "source": "app/components/button/Button.vue",
                     "target": "components/button/Button.vue"
                 }
@@ -33,6 +35,7 @@
             "description": "Standard textarea component.",
             "files": [
                 {
+                    "id": "Ugg2tYz21",
                     "source": "app/components/textarea/Textarea.vue",
                     "target": "components/textarea/Textarea.vue"
                 }
@@ -46,34 +49,42 @@
             "description": "Standard select component.",
             "files": [
                 {
+                    "id": "Ugg2tYz22",
                     "source": "app/components/select/Select.vue",
                     "target": "components/select/Select.vue"
                 },
                 {
+                    "id": "Ugg2tYz23",
                     "source": "app/components/select/SelectContent.vue",
                     "target": "components/select/SelectContent.vue"
                 },
                 {
+                    "id": "Ugg2tYz24",
                     "source": "app/components/select/SelectGroup.vue",
                     "target": "components/select/SelectGroup.vue"
                 },
                 {
+                    "id": "Ugg2tYz25",
                     "source": "app/components/select/SelectItem.vue",
                     "target": "components/select/SelectItem.vue"
                 },
                 {
+                    "id": "Ugg2tYz26",
                     "source": "app/components/select/SelectLabel.vue",
                     "target": "components/select/SelectLabel.vue"
                 },
                 {
+                    "id": "Ugg2tYz27",
                     "source": "app/components/select/SelectSeparator.vue",
                     "target": "components/select/SelectSeparator.vue"
                 },
                 {
+                    "id": "Ugg2tYz28",
                     "source": "app/components/select/SelectTrigger.vue",
                     "target": "components/select/SelectTrigger.vue"
                 },
                 {
+                    "id": "Ugg2tYz29",
                     "source": "app/components/select/SelectValue.vue",
                     "target": "components/select/SelectValue.vue"
                 }
@@ -87,10 +98,12 @@
             "description": "Standard radio group component.",
             "files": [
                 {
+                    "id": "Ugg2tYz18",
                     "source": "app/components/radio-group/RadioGroup.vue",
                     "target": "components/radio-group/RadioGroup.vue"
                 },
                 {
+                    "id": "Ugg2tYz19",
                     "source": "app/components/radio-group/RadioGroupItem.vue",
                     "target": "components/radio-group/RadioGroupItem.vue"
                 }
@@ -104,22 +117,27 @@
             "description": "A toast component!",
             "files": [
                 {
+                    "id": "Tgg2tY518",
                     "source": "app/components/toast/Toast.vue",
                     "target": "components/toast/Toast.vue"
                 },
                 {
+                    "id": "Tgg2tY318",
                     "source": "app/components/toast/ToastContainer.vue",
                     "target": "components/toast/ToastContainer.vue"
                 },
                 {
+                    "id": "Tgg2tY218",
                     "source": "app/components/toast/ToastIcon.vue",
                     "target": "components/toast/ToastIcon.vue"
                 },
                 {
+                    "id": "Tgg2tY118",
                     "source": "shared/types/toast.ts",
                     "target": "types/toast.ts"
                 },
                 {
+                    "id": "Tgg2tYf18",
                     "source": "app/composables/useToast.ts",
                     "target": "composables/toast.ts"
                 }
